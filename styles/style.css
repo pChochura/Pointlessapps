@@ -66,8 +66,8 @@ main {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
+  -ms-grid-columns: 3fr 4fr;
+      grid-template-columns: 3fr 4fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -76,5 +76,31 @@ main {
 
 main .text-home p {
   color: #515151;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar-nav {
+    padding: 1em 0em;
+  }
+  .navbar-item {
+    display: none;
+  }
+  .navbar-item:last-child {
+    text-align: center;
+    margin-right: auto;
+    -ms-flex-item-align: center;
+        align-self: center;
+    justify-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

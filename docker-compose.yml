@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   app:
-    image: pointlessapps-image
+    image: ${APP_NAME}-image
     build:
       dockerfile: Dockerfile
       context: .

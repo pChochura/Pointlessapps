@@ -1,5 +1,5 @@
 FROM node
-RUN npm i http-server -g
 WORKDIR /app
 COPY . /app
-CMD cd /app && http-server -p 80
+RUN npm i
+CMD cd /app && APP_PORT=80 npm run

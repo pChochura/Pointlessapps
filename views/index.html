@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PointlessApps</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="./styles/style.css" rel="stylesheet">
-    <script defer src="./scripts/script.js"></script>
+    <link href="styles/style_main.css" rel="stylesheet">
+    <link href="styles/style_home.css" rel="stylesheet">
+    <link href="styles/style_terminal.css" rel="stylesheet">
+    <script defer src="scripts/script_main.js"></script>
+    <script defer src="scripts/script_terminal.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <nav class="navbar">
         <ul class="navbar-nav">
             <li class="navbar-item">
-                <a class="navbar-link" href="#home">home</a>
+                <a class="navbar-link" href="./">home</a>
             </li>
             <li class="navbar-item">
-                <a class="navbar-link" href="#projects">projects</a>
+                <a class="navbar-link" href="./projects">projects</a>
             </li>
             <li class="navbar-item">
-                <a class="navbar-link" href="#about">about</a>
+                <a class="navbar-link" href="./about">about</a>
             </li>
             <li class="navbar-item">
-                <a class="navbar-link logo" href="#home">PointlessApps</a>
+                <a class="navbar-link logo" href="./">PointlessApps</a>
             </li>
         </ul>
     </nav>
@@ -35,7 +38,9 @@
             </p>
         </div>
         <div class="card">
-            <p class="terminal"><span class="terminal-output" data-output="./terminal_output.txt"></span><span class="cursor">_</span></p>
+            <p class="terminal">
+                <span class="terminal-output" data-output="./data/terminal_output.tto" data-input-callback="input"></span><span class="cursor">_</span>
+            </p>
         </div>
     </main>
 </body>

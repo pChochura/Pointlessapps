@@ -1,0 +1,91 @@
+:root {
+    --textColorPrimary: #313131;
+    --textColorPrimaryActive: rgb(80, 10, 80);
+    --textColorSecondary: #515151;
+}
+
+body {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    background: #eee;
+    color: var(--textColorPrimary);
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    background: #eee;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+    &-nav {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 1rem 3rem;
+    }
+
+    &-item {
+        margin: 0rem 1rem;
+        font-size: 20px;
+        transition: 0.3s;
+        align-self: center;
+    
+        &:last-child {
+            margin-left: auto;
+        }
+    }
+
+    &-link {
+        text-decoration: none;
+        display: flex;
+
+        &:visited, &:link {
+            color: var(--textColorPrimary);
+        }
+
+        &:hover, &:active {
+            color: var(--textColorPrimaryActive);
+        }
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+}
+
+.active {
+    color: var(--textColorPrimaryActive);
+    font-weight: 800;
+}
+
+.card {
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 
+        -12px -12px 12px #fff,
+        12px 12px 12px rgba(0, 0, 0, 0.03);
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar {
+        &-nav {
+            padding: 1rem 0rem;
+        }
+
+        &-item {
+            display: none;
+
+            &:last-child {
+                text-align: center;
+                margin-right: auto;
+                align-self: center;
+                justify-self: center;
+                display: flex;
+            }
+        }
+    }
+}

@@ -1,5 +1,3 @@
-function input(event) {
-    if (event.keyCode == 13) {
-        window.location.pathname = '/projects';
-    }
-}
+$(document).scroll((event) => {
+    $('.navbar').toggleClass('shadow', $(document).scrollTop() !== 0);
+});

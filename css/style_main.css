@@ -1,8 +1,16 @@
-:root { --textColorPrimary: #313131; --textColorPrimaryActive: rgb(80, 10, 80); --textColorSecondary: #515151; }
+:root { --white: #ffffff; --gray1: #eeeeee; --gray2: #bbbbbb; --gray3: #515151; --gray4: #313131; --gray5: #252525; --purple1: #d154d1; --purple2: #500a50; }
 
-body { font-family: Montserrat; margin: 0; padding: 0; background: #eee; color: var(--textColorPrimary); }
+.light { --textColorPrimary: var(--gray4); --textColorPrimaryActive: var(--purple2); --textColorSecondary: var(--gray3); --colorBackground: var(--gray1); -webkit-transition: 0.3s; transition: 0.3s; }
 
-.navbar { width: 100%; position: fixed; background: #eee; -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+.dark { --textColorPrimary: var(--white); --textColorPrimaryActive: var(--purple1); --textColorSecondary: var(--gray2); --colorBackground: var(--gray5); -webkit-transition: 0.3s; transition: 0.3s; }
+
+body { font-family: Montserrat; margin: 0; padding: 0; background: var(--colorBackground); color: var(--textColorPrimary); }
+
+.background { position: absolute; margin: 0; padding: 0; width: 100vw; height: 100vh; }
+
+.shadow { -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+
+.navbar { width: 100%; position: fixed; background: var(--colorBackground); }
 
 .navbar-nav { list-style: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; margin: 0; padding: 1rem 3rem; }
 
@@ -20,7 +28,7 @@ body { font-family: Montserrat; margin: 0; padding: 0; background: #eee; color: 
 
 .active { color: var(--textColorPrimaryActive); font-weight: 800; }
 
-.card { padding: 0; border-radius: 12px; overflow: hidden; -webkit-box-shadow: -12px -12px 12px #fff, 12px 12px 12px rgba(0, 0, 0, 0.03); box-shadow: -12px -12px 12px #fff, 12px 12px 12px rgba(0, 0, 0, 0.03); }
+.card { padding: 0; border-radius: 12px; overflow: hidden; -webkit-box-shadow: -12px -12px 12px #3B3D40, 12px 12px 12px #0506077c; box-shadow: -12px -12px 12px #3B3D40, 12px 12px 12px #0506077c; }
 
 @media only screen and (max-width: 800px) { .navbar-nav { padding: 1rem 0rem; }
   .navbar-item { display: none; }

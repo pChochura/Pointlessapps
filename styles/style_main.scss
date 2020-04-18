@@ -5,6 +5,9 @@
     --gray3: #515151;
     --gray4: #313131;
     --gray5: #252525;
+    --greish1: #3B3D40;
+    --greish2: #0506077c;
+    --greish3: rgba(0, 0, 0, 0.1);
     --purple1: #d154d1;
     --purple2: #500a50;
 }
@@ -14,6 +17,8 @@
     --textColorPrimaryActive: var(--purple2);
     --textColorSecondary: var(--gray3);
     --colorBackground: var(--gray1);
+    --colorShadowUpperLeft: var(--white);
+    --colorShadowLowerRight: var(--greish3);
     transition: 0.3s;
 }
 
@@ -22,6 +27,8 @@
     --textColorPrimaryActive: var(--purple1);
     --textColorSecondary: var(--gray2);
     --colorBackground: var(--gray5);
+    --colorShadowUpperLeft: var(--greish1);
+    --colorShadowLowerRight: var(--greish2);
     transition: 0.3s;
 }
 
@@ -29,8 +36,23 @@ body {
     font-family: Montserrat;
     margin: 0;
     padding: 0;
-    background: var(--colorBackground);
+    background-color: var(--colorBackground);
+    background-image: url('../data/background.png');
+    background-size: cover;
     color: var(--textColorPrimary);
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--textColorPrimaryActive);
+    border-radius: 0.5rem;
 }
 
 .background {
@@ -97,9 +119,7 @@ body {
     padding: 0;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 
-        -12px -12px 12px #3B3D40,
-        12px 12px 12px #0506077c;
+    box-shadow: 0px 0px 12px var(--colorShadowLowerRight);
 }
 
 @media only screen and (max-width: 800px) {

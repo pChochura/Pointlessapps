@@ -2,6 +2,8 @@
 
 .terminal .cursor { font-weight: bold; -webkit-animation: blink 1s 1s infinite; animation: blink 1s 1s infinite; }
 
+.answer { color: #614161; padding: 0rem 1rem; display: inline-block; }
+
 @-webkit-keyframes blink { 0% { opacity: 0; }
   40% { opacity: 0; }
   50% { opacity: 1; }

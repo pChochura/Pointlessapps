@@ -2,21 +2,21 @@
 0|$ 
 /200|whoami
 100|</br>
-100|&nbsp;<span style="color: #614161">Paweł Chochura</span>
+100|<span class="answer">Paweł Chochura</span>
 
 # help: Here you can find all projects that I've made.
 0|</br>$ 
 1000|
 /200|help
 100|</br>
-100|&nbsp;<span style="color: #614161">Here you can find all</br>&nbsp;projects that I've made.</span>
+100|<span class="answer">Here you can find all</br>projects that I've made.</span>
 
 # ls: projects about
 0|</br>$ 
 1000|
 /100|ls
 100|</br>
-100|&nbsp;<span style="color: #614161">projects about</span>
+100|<span class="answer">projects about</span>
 
 # cd projects?
 0|</br>$ 

@@ -1,0 +1,143 @@
+:root {
+    --white: #ffffff;
+    --gray1: #eeeeee;
+    --gray2: #bbbbbb;
+    --gray3: #515151;
+    --gray4: #313131;
+    --gray5: #252525;
+    --greish1: #3B3D40;
+    --greish2: #0506077c;
+    --greish3: rgba(0, 0, 0, 0.1);
+    --purple1: #851685;
+    --purple2: #500a50;
+}
+
+.light {
+    --textColorPrimary: var(--gray4);
+    --textColorPrimaryActive: var(--purple2);
+    --textColorSecondary: var(--gray3);
+    --colorBackground: var(--gray1);
+    --colorShadowUpperLeft: var(--white);
+    --colorShadowLowerRight: var(--greish3);
+    transition: 0.3s;
+}
+
+.dark {
+    --textColorPrimary: var(--white);
+    --textColorPrimaryActive: var(--purple1);
+    --textColorSecondary: var(--gray2);
+    --colorBackground: var(--gray5);
+    --colorShadowUpperLeft: var(--greish1);
+    --colorShadowLowerRight: var(--greish2);
+    transition: 0.3s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+#root {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+    width: 100%;
+    color: var(--textColorPrimary);
+    background-color: var(--colorBackground);
+    background-image: url('../images/background.png');
+    background-size: cover;
+}
+
+.active {
+    color: var(--textColorPrimaryActive);
+    font-weight: 800;
+}
+
+.card {
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.button-primary {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    background-color: var(--textColorPrimaryActive);
+    border: none;
+    border-radius: 0.3rem;
+    color: var(--textColorPrimary);
+    font-size: 1rem;
+    transition: all .1s linear 0s;
+
+    &:visited {
+        outline: 0;
+    }
+
+    &:hover {
+        filter: brightness(0.8);
+    }
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    transition: all .3s linear 0s;
+
+    &-nav {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 1rem 3rem;
+    }
+
+    &-item {
+        margin: 0rem 1rem;
+        font-size: 20px;
+        transition: 0.3s;
+        align-self: center;
+    
+        &:last-child {
+            margin-left: auto;
+        }
+    }
+
+    &-link {
+        text-decoration: none;
+        display: flex;
+
+        &:visited, &:link {
+            color: var(--textColorPrimary);
+        }
+
+        &:hover, &:active {
+            color: var(--textColorPrimaryActive);
+        }
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+}
+
+.background {
+    background-color: var(--colorBackground);
+}
+
+.shadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}

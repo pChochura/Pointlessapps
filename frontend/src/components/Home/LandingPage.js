@@ -1,11 +1,11 @@
 import React from 'react';
-import Card from './Card';
-import Terminal from './Terminal';
-import Button from './Button';
+import Card from '../Common/Card';
+import Terminal from '../Common/Terminal';
+import Button from '../Common/Button';
 
 export default function LandingPage() {
 	return (
-		<main>
+		<main className="page">
 			<div className="text-home">
 				<h1>PointlessApps</h1>
 				<p>

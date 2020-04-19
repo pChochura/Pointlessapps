@@ -33,6 +33,7 @@
 }
 
 body {
+    font-family: Montserrat;
     margin: 0;
     padding: 0;
 }
@@ -50,16 +51,22 @@ body::-webkit-scrollbar-thumb {
     border-radius: 0.5rem;
 }
 
-#root {
-    font-family: Montserrat;
-    margin: 0;
-    padding: 0;
-    height: 200vh;
+.backgroundImage {
+    z-index: -1;
+    position: fixed;
     width: 100%;
-    color: var(--textColorPrimary);
+    height: 100%;
     background-color: var(--colorBackground);
     background-image: url('../images/background.png');
     background-size: cover;
+}
+
+#root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    color: var(--textColorPrimary);
 }
 
 .active {

@@ -1,9 +1,0 @@
-version: '3.3'
-services:
-  app:
-    image: ${APP_NAME}-image
-    build:
-      dockerfile: Dockerfile
-      context: .
-    ports:
-      - "80:80"

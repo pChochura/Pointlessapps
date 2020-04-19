@@ -1,6 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
-import text from '../data/terminal_output';
+import text from '../../data/terminal_output';
 
 export default function Terminal(props) {
   return (

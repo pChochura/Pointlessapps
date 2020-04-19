@@ -1,14 +1,14 @@
 import React from 'react';
-import tridentLine from '../images/tridentLine.svg';
-import iconExperience from '../images/iconExperience.svg';
-import iconProfessionalism from '../images/iconProfessionalism.svg';
-import iconReliability from '../images/iconReliability.svg';
-import Card from './Card';
+import tridentLine from '../../images/tridentLine.svg';
+import iconExperience from '../../images/iconExperience.svg';
+import iconProfessionalism from '../../images/iconProfessionalism.svg';
+import iconReliability from '../../images/iconReliability.svg';
+import Card from '../Common/Card';
 
 export default function SecondPage() {
   return (
     <div className="page column">
-      <h1 className="centered">
+      <h1 className="centered" style={{ marginTop: '10rem'}}>
         What is so interesting about me?
       </h1>
       <img src={tridentLine} alt="Line" className="centered trident"/>
